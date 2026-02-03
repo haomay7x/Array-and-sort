@@ -21,14 +21,14 @@ public class TwoDimenArray {
                 return;
             }
             
-            // Создание массива
+            // Creating an Array
             int[][] matrix = new int[N][M];
             
-            // Заполнение массива случайными числами
-            System.out.print("\nPlease enter the minimum value for random numbers:");
+            // Filling an array with random numbers
+            System.out.print("\nEnter the minimum value for random numbers: ");
             int min = scanner.nextInt();
             
-            System.out.print("Enter the maximum value for random numbers:");
+            System.out.print("Enter the maximum value for random numbers: ");
             int max = scanner.nextInt();
             
             if (min > max) {
@@ -49,7 +49,7 @@ public class TwoDimenArray {
             
             System.out.println("\n=== Operations on array ===");
             // Find the sum of the elements of each row and each column
-            System.out.println("\nСуммы элементов:");
+            System.out.println("\nSums of elements:");
             
             // Row sums
             int[] rowSums = new int[N];
@@ -69,7 +69,7 @@ public class TwoDimenArray {
                     maxRowIndex = i;
                 }
                 
-                System.out.printf("Сумма строки %d: %d\n", i, rowSum);
+                System.out.printf("Line amount %d: %d\n", i, rowSum);
             }
             
             // Column sums
